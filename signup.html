@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <script type="text/javascript" src="./signup.js"></script>
+</head>
+<body>
+<div class="main-wrap">
+    <div class="form-account">
+        <div class="from-wrap">
+            <h2>
+                Let's set up your account
+            </h2>
+            <p> Already have an account? <a href="">Sign in</a></p>
+            <label class="pure-material-textfield-outlined">
+                <input placeholder=" " class="validate input-color" id="name" onblur="validateInput('name')"
+                       onfocus="errorRemove('name')"/>
+                <span>Your name</span>
+            </label>
+            <span class="error" id="name_span"></span>
+            <label class="pure-material-textfield-outlined">
+                <input class="validate input-color" placeholder=" " id="email" onblur="validateInput('email')"
+                       onfocus="errorRemove('email')">
+                <span>Email address</span>
+            </label>
+            <span class="error" id="email_span"></span>
+            <label class="pure-material-textfield-outlined">
+                <select class="validate input-color-select" id="selectBox" onblur="validateInput('selectBox')"
+                        onfocus="errorRemove('selectBox')">
+                    <option value="">I would describe my user type as</option>
+                    <option value="developer">developer</option>
+                    <option value="project manager">tester</option>
+                    <option value="designer">designer</option>
+                </select>
+            </label>
+            <span class="error" id="selectbox_span"></span>
+            <label class="pure-material-textfield-outlined">
+                <input placeholder=" " class="validate input-color" type="password" id="password" onblur="validateInput('password')"
+                       onfocus="errorRemove('password')">
+                <span>Password</span>
+                <span class="password-icon"><i class="fa fa-eye"></i></span>
+            </label>
+            <span class="min-char">Minimum 8 characters</span>
+            <span id="password_span" class="error"></span>
+            <button type="submit" id="button" class="signupbtn" disabled>Next</button>
+            <p class="frm-footer">By clicking on the "Next" button, you agree to creating a free account,
+                and to <span>Terms of Service</span> and <span>Privacy Policy.</span></p>
+        </div>
+    </div>
+    <div class="dummy-header">
+
+        <h2>
+            Dummy Heading
+        </h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
